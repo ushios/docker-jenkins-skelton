@@ -1,0 +1,12 @@
+version: '2'
+services:
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      JAVA_OPTS: ""
+    ports:
+      - 8080:8080
+    volumes:
+      - /var/jenkins_home jenkins
